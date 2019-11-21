@@ -1,0 +1,304 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'mali';
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    color: black;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #E1BAD7;
+}
+
+.License {
+    text-decoration: none;
+    color: black;
+}
+
+/* MENU */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    padding-left: 1.5rem;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3px;
+    transition: .3s ease;
+}
+
+.menu li a:hover {
+    color: #eee;
+    background-color: black;
+}
+
+.menu li:last-child {
+    float: right;
+    padding-right: 1rem;
+}
+
+/* CONTENT */
+#mali,
+#styles {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25% 0 25%;
+}
+
+.letters {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.example {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'mali';
+    flex-direction: column;
+}
+
+.example p {
+    border-left: none;
+}
+
+div section div,
+.border {
+    border-left: 1px solid #E1BAD7
+}
+
+div section div p {
+    border-left: none;
+}
+
+.underline {
+    border-bottom: 1px solid #E1BAD7;
+}
+
+.font a {
+    text-decoration: none;
+    color: black;
+    border-radius: 70px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.font {
+    border-left: none;
+}
+
+.font-variants {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0;
+}
+
+section img {
+    height: 75vh;
+
+}
+
+.font-variants {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0;
+}
+
+.extra.light {
+    font-weight: 200;
+}
+
+.extra.light.italic {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.light {
+    font-weight: 300
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.regular.italic {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.medium.italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.semi-bold.italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bold.italic {
+    font-weight: 700;
+    font-style: italic;
+}
+
+#design {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 1.2rem;
+}
+
+p {
+    color: black;
+    border-left: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.quote {
+    letter-spacing: 1.5px;
+    padding-bottom: 5%;
+}
+
+/* Logo */
+#mali img {
+    height: 35%;
+    padding-left: 20%;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 5%;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5%;
+    margin: 3rem;
+}
+
+/* BETINGELSER */
+@media (max-width:600px) {
+    body {
+        max-width: 550px;
+    }
+
+    #mali {
+        padding: 0 15% 0 15%;
+    }
+
+    .alphabet {
+        padding: 0 15% 0 15%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+
+    .p {
+        font-size: 1rem;
+    }
+
+    .border {
+        border-left: none;
+    }
+
+    div section div,
+    .border {
+        border-left: none;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .menu li:first-child,
+    .menu li:last-child {
+        display: inline-block;
+    }
+
+    .underlinesmall {
+        border-bottom: 1px solid #eee;
+    }
+
+    .alphabetsmall {
+        display: none;
+    }
+
+    div section div p {
+        border-left: none;
+    }
+
+    section img {
+        height: 60%;
+    }
+
+    #mali img {
+        height: 25%;
+    }
+
+    #type {
+        width: 70%;
+    }
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* MENU */
+
+header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+a {
+    text-decoration: none;
+    flex: auto;
+}
+
+nav a {
+    font-size: 70px;
+    color: #2A2F39;
+}
+
+main {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+/* CONTENT */
+
+.mali,
+.roboto {
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    flex: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.roboto {
+    border-right: 1px solid gray;
+    font-family: 'roboto';
+}
+
+.mali {
+    font-family: 'Mali';
+}
+
+.roboto a {
+    color: white;
+    border-radius: 100px;
+    background-color: #1B171B;
+    padding: 15px;
+    margin: 100px;
+}
+
+.mali a {
+    color: #2A2F39;
+    border-radius: 100px;
+    background-color: #E1BAD7;
+    padding: 15px;
+    margin: 100px;
+}
+
+.roboto a:hover {
+    box-shadow: 10px 10px 8px 8px lightgray;
+}
+
+.mali a:hover {
+    box-shadow: 10px 10px 8px 8px lightgray;
+}
+
+a:active {
+    background-color: gray;
+}
+
+div em {
+    font-size: 0.8rem;
+}
+
+/* BETINGELSER */
+
+@media (max-width:800px) {
+    body {
+        max-width: 550px;
+        margin:auto;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .roboto,
+    .mali {
+        width: 100vw;
+        height:30vh;
+        min-height: 25vh;
+        justify-content: center;
+        margin-bottom:5%;
+    }
+    .roboto a, .mali a{
+        cursor: pointer;
+        display:inline-block;
+        margin:0;
+        max-width:180px;
+        min-height:180px;
+        border-radius:50%;
+    }
+
+    .roboto {
+        border-right: none;
+    }
+}
